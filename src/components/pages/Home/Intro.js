@@ -16,7 +16,7 @@ export default function Intro() {
     <div className='intro-container h-screen w-full flex flex-col sm:h-auto sm:w-auto'>
       <div className='intro-content h-full bg-primary flex flex-col items-start justify-center gap-10 opacity-80 py-10 sm:h-auto sm:items-center sm:py-6 sm:px-4'>
         <h1 className='text-slate-700 font-mono font-extrabold text-2xl sm:text-xl sm: p-2.5 sm:mb-px'>
-          Hi i'm
+    {welcomeText || " "}
         </h1>
         <h1 className='text-secondary text-8xl sm:text-4xl font-semibold sm:mt-0'>
           {firstName+' '+lastName ||''}
