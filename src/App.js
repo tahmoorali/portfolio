@@ -15,7 +15,7 @@ function App() {
   const getPortfolioData=async()=>{
     try {
       dispatch(ShowLoading(true));
-      const response = await axios.get('https://portfolio-backend-ad2c.onrender.com');
+      const response = await axios.get("https://portfolio-ten-delta-15.vercel.app/api/portfolio/get-portfolio-data");
       dispatch(SetPortfolioData(response.data));
       dispatch(HideLoading());
     } catch (error) {
