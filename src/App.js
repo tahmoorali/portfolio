@@ -15,7 +15,7 @@ function App() {
   const getPortfolioData=async()=>{
     try {
       dispatch(ShowLoading(true));
-      const response = await axios.get('./api/portfolio/get-portfolio-data');
+      const response = await axios.get('https://render.com/docs/web-services#port-binding');
       dispatch(SetPortfolioData(response.data));
       dispatch(HideLoading());
     } catch (error) {
