@@ -2,7 +2,6 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tahmoorali.github.io/portfolio",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "@testing-library/jest-dom": "^5.17.0",
@@ -19,8 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts --max_old_space_size=4096 build",
-    "deploy": "react-scripts --max_old_space_size=4096 build && gh-pages -d build",
+    "build": "react-scripts build",
+    "deploy": "react-scripts build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build"
@@ -43,7 +42,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
